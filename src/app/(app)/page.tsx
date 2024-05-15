@@ -8,9 +8,7 @@ import { Extras } from "@/components/Extras";
 export default function Home() {
   return (
     <main className="snap-y !snap-mandatory h-screen overflow-y-scroll scroll-smooth">
-      <div className="grid place-content-end absolute top-3 right-10">
-        <NavbarDemo />
-      </div>
+      <NavbarDemo/>
       <Hero />
       <About/>
       <Services/>

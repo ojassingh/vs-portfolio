@@ -8,7 +8,7 @@ import {
   SearchIcon,
   RocketIcon,
   BanknoteIcon,
-  CheckIcon,
+  ChevronRight
 } from "lucide-react";
 import { useInView } from "framer-motion";
 import Link from "next/link";
@@ -86,7 +86,7 @@ export function Services() {
         transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
       }}
     >
-      <section className="w-full p-20">
+      <section className="w-full py-20 px-32">
         <div className="flex items-center justify-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4 w-[40%]">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#353b48] tracking-wide">
@@ -99,7 +99,7 @@ export function Services() {
             </p>
             <Link href="#contact">
               <button className="bg-gradient-to-r from-blue-700 via-indigo-500 to-pink-400 py-2 px-4 text-white rounded-3xl my-5">
-                Get in touch
+                Get in touch <ChevronRight className="inline-block h-fit" />
               </button>
             </Link>
           </div>
@@ -107,7 +107,7 @@ export function Services() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="py-6 px-5 bg-white rounded-lg shadow-lg hover:bg-blue-50"
+                className="py-6 px-5 bg-[#f8f9fa] rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-blue-50"
               >
                 <service.icon className="w-6 h-6 text-[#273c75] text-center mx-auto" />
                 <h3 className="mt-4 text-lg font-semibold text-[#273c75] text-center">

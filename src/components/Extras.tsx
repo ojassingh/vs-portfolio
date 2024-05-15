@@ -1,25 +1,38 @@
-'use client'
+"use client";
 import { merriweather } from "./ui/fonts";
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 export function Extras() {
   return (
     <div
       id="testimonials"
-      className="snap-start h-screen rounded-md bg-[#f8f9fa]"
+      className="snap-start rounded-md bg-[#f8f9fa]  py-20"
     >
-    <div className="pt-32 text-center">
-        <h1 className="text-5xl font-semibold text-neutral-700"><span className={merriweather.className}>What Our Clients Say</span></h1>
-        <p className="py-10 text-xl text-neutral-700">Hear from the people we've helped.</p>
-    </div>
-    <div className=" rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
-    </div>
+      <div className="text-center">
+        <h1 className="text-2xl font-medium mb-10">
+          <span className="bg-clip-text text-transparent bg-gradient-to-b to-indigo-600 from-blue-600">WHAT DO THEY SAY?</span>
+        </h1>
+        <h1 className="text-5xl font-semibold text-neutral-700">
+          <span className={merriweather.className}>Our Clients' Kind Words</span>
+        </h1>
+        <p className="py-6 mt-4 text-xl text-neutral-500">
+          Hear from the people we've helped with our services.
+        </p>
+      </div>
+      <div className=" rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+        />
+      </div>
+      <div className=" rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="left"
+          speed="slow"
+        />
+      </div>
     </div>
   );
 }
@@ -27,15 +40,15 @@ export function Extras() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "I collaborated with Vandana at ACT Fibernet, where she was GM & Company Secretary and played a pivotal role in launching Astravise LLP to aid startups. She is a consummate professional with deep expertise in secretarial practices. Her team is known for delivering high-quality, timely results, ensuring every interaction remains positive, regardless of the complexity involved.",
+    name: "Venkatesh Bhat",
+    title: "Managing Partner @ Astravise LLP",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+      "Vandana is an expert in company law and secretarial practices, consistently updated with the latest changes. She analyzes issues holistically, offering pragmatic solutions. Working with her is always enlightening, and I look forward to more collaborations.",
+    name: "Deepak Gupta",
+    title: "Founding Partner @ Astravise LLP",
   },
   {
     quote: "All that we see or seem is but a dream within a dream.",

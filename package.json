@@ -9,13 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@payloadcms/db-mongodb": "^3.0.0-beta.32",
+    "@payloadcms/next": "^3.0.0-beta.32",
+    "@payloadcms/richtext-lexical": "^3.0.0-beta.32",
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.1.7",
     "lucide-react": "^0.376.0",
-    "next": "14.2.3",
+    "next": "^14.2.3",
     "next-themes": "^0.3.0",
+    "payload": "^3.0.0-beta.32",
     "react": "^18",
     "react-countup": "^6.5.3",
     "react-dom": "^18",

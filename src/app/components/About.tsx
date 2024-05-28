@@ -142,7 +142,7 @@ export function About() {
                 ventures. She is adept at drafting agreements and conducting
                 meticulous due diligence, making her an invaluable asset to
                 numerous Indian businesses. Her unwavering dedication to her
-                clients have earned her a reputation as one of India's leading
+                clients have earned her a reputation as one of India&apos;s leading
                 company secretary.
               </p>
           </div>

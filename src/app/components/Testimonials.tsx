@@ -1,7 +1,6 @@
 "use client";
 import { merriweather } from "./ui/fonts";
 import React from "react";
-import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -19,11 +18,11 @@ export function Testimonials() {
         </h1>
         <h1 className="text-5xl font-semibold text-neutral-700">
           <span className={merriweather.className}>
-            Our Clients' Kind Words
+            Our Clients&apos; Kind Words
           </span>
         </h1>
         <p className="py-6 mt-4 text-xl text-neutral-500">
-          Hear from the people we've helped with our services.
+          Hear from the people we&apos;ve helped with our services.
         </p>
       </div>
       <div className=" rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
@@ -54,12 +53,21 @@ export function Testimonials() {
                     </span>
                     <span className=" text-md leading-[1.6] text-white font-semibold">
                       {item.role} @{" "}
-                      {item.src ? <a target="_blank" href={item.src}><span className="underline">{item.company} <ArrowUpRight className="inline-block h-5" /></span></a> : item.company}
+                      {item.src ? (
+                        <a target="_blank" href={item.src}>
+                          <span className="underline">
+                            {item.company}{" "}
+                            <ArrowUpRight className="inline-block h-5" />
+                          </span>
+                        </a>
+                      ) : (
+                        item.company
+                      )}
                     </span>
                   </span>
                 </div>
                 <span className=" relative z-20 text-md leading-[1.6] text-white font-normal">
-                  "{item.quote}"
+                  &quot;{item.quote}&quot;
                 </span>
               </blockquote>
             </motion.li>
@@ -126,5 +134,5 @@ const testimonials = [
     role: "County Legal Head",
     company: "Itochu India Pvt. Ltd.",
     src: "https://www.itochu.co.jp/en/about/network/asia/index.html#anc5",
-  }
+  },
 ];

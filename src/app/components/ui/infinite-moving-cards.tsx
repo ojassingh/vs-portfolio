@@ -103,12 +103,14 @@ export const InfiniteMovingCards = ({
                     {item.name}
                   </span>
                   <span className=" text-md leading-[1.6] text-white font-semibold">
-                    {item.role} @ <span className="underline">{item.company}</span><ArrowUpRight className="inline-block h-5"/>
+                    {item.role} @{" "}
+                    <span className="underline">{item.company}</span>
+                    <ArrowUpRight className="inline-block h-5" />
                   </span>
                 </span>
               </div>
               <span className=" relative z-20 text-sm leading-[1.6] text-white font-normal">
-                "{item.quote}"
+                &quot;{item.quote}&quot;
               </span>
             </blockquote>
           </li>

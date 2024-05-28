@@ -15,13 +15,13 @@ import { WavyBackground } from "./ui/wavy-background";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import icsi from "../../../public/images/icsi.png";
 import Image from "next/image";
-import { easeOut, motion } from "framer-motion";
+import {motion } from "framer-motion";
 
 import unicharm from "../../../public/images/unicharm.png";
 import itochu from "../../../public/images/itochu.png";
 import censhare from "../../../public/images/censhare.png";
 import egelhof from "../../../public/images/egelhof.png";
-import cpr from "../../../public/images/cpr.png";
+import cpr from '../../../public/images/CPR.png';
 
 export function Hero() {
   const companies = [
@@ -50,14 +50,6 @@ export function Hero() {
       src: cpr,
       link: "https://www.cprindia.org/",
     },
-    // {
-    //   name: "AstraVise LLP",
-    //   src: "astravise"
-    // },
-    // {
-    //   name: "Institute for Policy Research",
-    //   src: "ipr"
-    // },
   ];
   const words = "Compliance Expertise that You Can Trust";
 

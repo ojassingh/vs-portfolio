@@ -21,9 +21,10 @@ export default async function Blogs() {
             </span>
           </h1>
           <h3 className="text-gray-500 text-base md:text-lg text-center">
-            "Navigating the Legal Labyrinth: Cutting-Edge Compliance Insights"
+            &quot;Navigating the Legal Labyrinth: Cutting-Edge Compliance
+            Insights&quot;
           </h3>
-          <hr className="h-px my-8 bg-gray-100 border-0 dark:bg-gray-500"/>
+          <hr className="h-px my-8 bg-gray-100 border-0 dark:bg-gray-500" />
           <div className="flex gap-8 place-content-center items-center">
             {posts.map((post: any) => (
               <Link key={post.sys.id} href={"/blog/" + post.fields.slug}>
@@ -46,15 +47,17 @@ export default async function Blogs() {
                     <h2 className="text-lg sm:text-xl md:text-2xl py-3 font-semibold hover:inline-block hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-600">
                       {post.fields.title}
                     </h2>
-                    <p className="text-gray-500 text-sm sm:text-base md:text-lg">{post.fields.thumbnailDescription}</p>
+                    <p className="text-gray-500 text-sm sm:text-base md:text-lg">
+                      {post.fields.thumbnailDescription}
+                    </p>
                     <div className="flex items-center mt-5">
                       <Image
-                          className="rounded-full"
-                          src={`https:${post.fields.author.fields.authorHeadshot.fields.file.url}`}
-                          alt={post.fields.author.fields.name}
-                          width={50}
-                          height={50}
-                        />
+                        className="rounded-full"
+                        src={`https:${post.fields.author.fields.authorHeadshot.fields.file.url}`}
+                        alt={post.fields.author.fields.name}
+                        width={50}
+                        height={50}
+                      />
                       <div className="ml-3">
                         <p className="text-gray-900 font-semibold text-base">
                           {post.fields.author.fields.name}

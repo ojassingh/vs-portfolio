@@ -23,7 +23,7 @@ export function Contact() {
               Get in touch with us today!
             </h1>
             <p className="mt-10 text-neutral-200 text-md md:text-lg">
-              We'd love to help you out. Please fill in the form and we will get
+              We&apos;d love to help you out. Please fill in the form and we will get
               back to you as soon as possible.
             </p>
             <div className="my-10">

@@ -87,7 +87,7 @@ export default function Footer() {
             <div>
               <Link
                 className="hover:text-gray-50 transition-colors"
-                href="#about"
+                href="/#about"
               >
                 About
               </Link>
@@ -95,7 +95,7 @@ export default function Footer() {
             <div>
               <Link
                 className="hover:text-gray-50 transition-colors"
-                href="#services"
+                href="/#services"
               >
                 Services
               </Link>
@@ -103,7 +103,7 @@ export default function Footer() {
             <div>
               <Link
                 className="hover:text-gray-50 transition-colors"
-                href="#contact"
+                href="/#contact"
               >
                 Contact
               </Link>

@@ -105,11 +105,11 @@ export function Services() {
             </Link>
           </div>
           <div className="flex-3">
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mx-auto place-content-center ">
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="w-[32%] py-6 px-8 bg-[#f8f9fa] rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-blue-50"
+                  className="w-[100%] md:w-[32%] py-6 px-8 bg-[#f8f9fa] rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-blue-50"
                 >
                   <service.icon className="w-6 h-6 text-[#273c75] text-center mx-auto" />
                   <h3 className="mt-4 text-lg font-semibold text-[#273c75] text-center">

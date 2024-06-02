@@ -72,7 +72,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="grid place-content-center gap-10 mt-16 mx-auto inset-x-0 px-8 sm:px-0">
+        <div className="w-[80%] grid place-content-center gap-10 mt-16 mx-auto inset-x-0 px-8 sm:px-0">
           <h1 className="text-md sm:text-xl text-center font-medium inline-block text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-blue-800 to-pink-600 capitalize">
             Powering founders And companies all across the world
           </h1>

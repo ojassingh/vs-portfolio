@@ -47,7 +47,7 @@ export const TextGenerateEffect = ({
     <div className={cn("font-bold", className)}>
       <div className="mt-4">
         <div className={merriweather.className}>
-        <div className="text-black leading-snug mx-auto w-[90%] md:w-[100vh] tracking-wide relative z-10 text-3xl sm:text-4xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-b to-neutral-700 from-neutral-900 text-center font-bold md:leading-[5rem]">
+        <div className="text-black leading-snug mx-auto w-[80%] tracking-wide relative z-10 text-3xl sm:text-4xl md:text-6xl bg-clip-text text-transparent bg-gradient-to-b to-neutral-700 from-neutral-900 text-center font-bold md:leading-[5rem]">
           {renderWords()}
         </div>
         </div>

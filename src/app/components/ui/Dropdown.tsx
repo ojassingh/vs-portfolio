@@ -19,6 +19,16 @@ import {
   Phone,
   SearchSlash,
 } from "lucide-react";
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarTrigger,
+} from "@/app/components/ui/menubar"
+
 
 export function DropdownMenuDemo() {
   const navItems = [
@@ -56,30 +66,26 @@ export function DropdownMenuDemo() {
 
   return (
     <div className="z-[2000] mx-2">
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="outline">
-            <Menu />
-          </Button>
-        </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-16 mx-4">
-            <DropdownMenuLabel>Menu</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuGroup>
+      <Menubar>
+        <MenubarMenu>
+        <MenubarTrigger><Menu />
+        </MenubarTrigger>
+          <MenubarContent className="w-16 mx-4">
+            <MenubarSeparator />
               {navItems.map((item: any, i:number) => {
                 return (
                   <div key={i}>
-                    <DropdownMenuItem>
+                    <MenubarItem>
                     <Link className="text-sm" href={item.href}>
                       {item.name}
                     </Link>
-                  </DropdownMenuItem>
+                  </MenubarItem>
                   </div>
                 );
               })}
-            </DropdownMenuGroup>
-          </DropdownMenuContent>
-      </DropdownMenu>
+          </MenubarContent>
+        </MenubarMenu>
+      </Menubar>
     </div>
   );
 }

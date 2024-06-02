@@ -44,8 +44,8 @@ export function About() {
         transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
       }}
     >
-      <div className="flex flex-col md:flex-row gap-4 max-w-7xl mx-auto justify-center mt-4 ">
-        <div className="w-full md:w-1/2 lg:w-[60%] h-[100%] rounded-3xl bg-[#f8f9fa]">
+      <div className="flex flex-col flex-wrap md:flex-row gap-4 max-w-7xl mx-auto justify-center mt-4 ">
+        <div className="w-full flex-1 h-[100%] rounded-3xl bg-[#f8f9fa]">
           <motion.div
             whileHover={{
               scale: 1.01,
@@ -66,7 +66,7 @@ export function About() {
                 resolution. We pride ourselves on our ability to provide
                 tailored solutions that meet the unique needs of our clients.
               </p>
-              <div className="flex flex-wrap sm:flex-nowrap gap-2 place-content-center items-center">
+              <div className="flex flex-wrap gap-2 place-content-center items-center">
                 <Link href="#services">
                   <button className="bg-gradient-to-r text-white from-indigo-600/[0.9] to-blue-600/[0.9] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-2 px-4 rounded-3xl">
                     Our Services <ChevronDown className="inline-block h-fit" />
@@ -84,7 +84,7 @@ export function About() {
             </div>
           </motion.div>
         </div>
-        <div className="w-full md:w-1/2 lg:w-[40%] h-auto">
+        <div className="w-full flex-1 h-auto">
           <div className="grid grid-cols-2 gap-4 h-full rounded-3xl">
             {statistics.map((stat, i) => {
               return (
@@ -116,7 +116,7 @@ export function About() {
             scale: 1.01,
             transition: { ease: "easeInOut", duration: 0.2 },
           }}
-          className="sm:w-[80%]"
+          className="flex-4"
         >
           <div className="bg-[#f8f9fa] shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-10 rounded-2xl h-full grid place-content-center items-center">
             <div className="flex flex-wrap sm:flex-nowrap gap-2">
@@ -159,7 +159,7 @@ export function About() {
             scale: 1.01,
             transition: { ease: "easeInOut", duration: 0.2 },
           }}
-          className="sm:w-[20%] sm:h-full "
+          className="md:flex-2 lg:flex-1 h-[20rem] sm:h-full"
         >
           <Image
             src={headshot}

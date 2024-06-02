@@ -88,9 +88,9 @@ export function Services() {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
-        <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
-          <div className="space-y-4 px-4 flex-1">
-            <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl text-[#353b48] tracking-wide">
+        <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
+          <div className="space-y-4 px-8 sm:px-0 flex-1">
+            <h2 className="text-3xl font-bold sm:text-4xl  md:text-5xl text-[#353b48] tracking-wide">
               <span className={merriweather.className}>Our Legal Services</span>
             </h2>
             <p className="text-gray-500 text-base md:text-lg">
@@ -109,7 +109,7 @@ export function Services() {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="w-[100%] md:w-[32%] py-6 px-8 bg-[#f8f9fa] rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-blue-50"
+                  className="w-[20rem] sm:w-[30rem] py-6 px-8 bg-[#f8f9fa] rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-blue-50"
                 >
                   <service.icon className="w-6 h-6 text-[#273c75] text-center mx-auto" />
                   <h3 className="mt-4 text-lg font-semibold text-[#273c75] text-center">

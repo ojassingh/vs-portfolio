@@ -18,27 +18,29 @@ export function Contact() {
         </h1>
 
         <div className="flex flex-wrap-reverse sm:flex-nowrap md:flex-nowrap mx-auto p-6 sm:p-10 md:w-[80%]  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-2xl mt-10 place-content-center items-center ">
-          <div className="sm:flex-1 bg-gradient-to-r from-blue-500 to-indigo-500 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-2xl p-4 sm:p-10 relative overflow-hidden z-100 my-auto">
+          <div className="grid gap-10 sm:flex-1 bg-gradient-to-r from-blue-500 to-indigo-500 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-2xl p-4 sm:p-10 relative overflow-hidden z-100 my-auto">
+            {/* <div className="grid gap-10"> */}
             <h1 className="text-white text-lg sm:text-xl md:text-2xl font-semibold">
               Get in touch with us today!
             </h1>
-            <p className="mt-10 text-neutral-200 text-md md:text-lg">
+            <p className=" text-neutral-200 text-md md:text-lg">
               We&apos;d love to help you out. Please fill in the form and we will get
               back to you as soon as possible.
             </p>
-            <div className="my-10">
+            <div className="">
               <Link href="https://www.linkedin.com/company/vsingh-associates" target="_blank" className="text-white text-sm sm:text-md md:text-lg underline">
                 <Linkedin className="inline-block h-5 mr-2 " />
                 Follow Us on LinkedIn <ArrowUpRight className="inline-block h-5"/>
               </Link>
             </div>{" "}
-            <div className="sm:py-16">
+            <div className="sm:py-[20%]">
             <Image
               src={gavel}
               alt="gavel-image"
               className="object-contain rounded-tl-2xl absolute bottom-0 -right-[20%] z-0 hidden sm:inline-block"
             />
             </div>
+            {/* </div> */}
           </div>
 
           <div className="sm:flex-1 p-4 sm:p-10">

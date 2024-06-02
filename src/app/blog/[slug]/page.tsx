@@ -42,7 +42,7 @@ export default async function BlogPage({
         <h1 className="text-xl sm:text-2xl md:text-3xl pt-4"><span className={merriweather.className}>{children}</span></h1>
       ),
       [BLOCKS.PARAGRAPH]: (node: any, children: any) => (
-        <p className="text-neutral-600 text-sm sm:text-base md:text-lg">
+        <p className="text-neutral-600 text-base sm:text-base md:text-lg">
           {children}
         </p>
       ),

@@ -11,7 +11,7 @@ export function Testimonials() {
       id="testimonials"
       className="snap-start rounded-md bg-[#f8f9fa]  py-10 sm:py-20 "
     >
-      <div className="text-center md:mt-10">
+      <div className="text-center">
         {/* <h1 className="text-2xl font-medium mb-10">
           <span className="bg-clip-text text-transparent bg-gradient-to-b to-indigo-600 from-blue-600">
             WHAT DO THEY SAY?
@@ -22,7 +22,7 @@ export function Testimonials() {
             Our Clients&apos; Kind Words
           </span>
         </h1>
-        <p className="py-6 mt-4 text-lg sm:text-lg md:text-xl text-neutral-500 px-4 sm:px-0">
+        <p className="py-6 text-lg sm:text-lg md:text-xl text-neutral-500 px-4 sm:px-0">
           Hear from the people we&apos;ve helped with our services.
         </p>
       </div>

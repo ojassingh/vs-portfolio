@@ -59,7 +59,7 @@ export function About() {
                   <span className={merriweather.className}>More about us!</span>
                 </h2>
               </div>
-              <p className="py-4 text-md md:text-xl text-neutral-900">
+              <p className="py-4 text-base md:text-lg text-neutral-900">
                 Our team of legal experts specializes in a wide range of
                 corporate law practices, including mergers and acquisitions,
                 corporate governance, regulatory compliance, and dispute
@@ -134,7 +134,7 @@ export function About() {
                 </button>
               </Link>
             </div>
-            <p className="mt-4 text-md sm:text-xl text-black">
+            <p className="mt-4 text-base md:text-lg text-black">
               <Image
                 src={cs}
                 alt="CS Member Logo"

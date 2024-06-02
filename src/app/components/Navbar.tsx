@@ -52,7 +52,7 @@ export function NavbarDemo() {
     <div className="z-[1000] bg-[#f8f9fa] top-0 flex place-content-between items-center px-4 sm:px-12 md:px-20 py-2 mx-auto inset-x-0 sm:sticky">
       <div className="text-xl text-black font-medium">
         <Link href="/#home">
-          <Image src={logo} alt="logo" className="w-16" />
+          <Image src={logo} alt="logo" className="w-12" />
         </Link>
       </div>
       <div className="hidden sm:hidden md:inline-block">
@@ -67,7 +67,7 @@ export function NavbarDemo() {
                     velocity: "40",
                   },
                 }}
-                className="py-2 px-3 rounded-3xl text-lg text-neutral-900 hover:text-blue-500 mx-auto"
+                className="py-2 px-3 rounded-3xl text-base text-neutral-900 hover:text-blue-500 mx-auto"
               >
                 <p className="flex place-content-center items-center gap-2 mx-auto">
                   {item.logo}

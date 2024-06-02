@@ -17,7 +17,7 @@ export function Contact() {
           <Hand className="inline-block w-8 h-8 sm:h-12 sm:w-12 mx-4 mb-2 rotate-45" />
         </h1>
 
-        <div className="flex flex-wrap-reverse sm:flex-nowrap md:flex-nowrap mx-auto p-6 sm:p-10 md:w-[70%]  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-2xl mt-10 place-content-center items-center ">
+        <div className="flex flex-wrap-reverse sm:flex-nowrap md:flex-nowrap mx-auto p-6 sm:p-10 md:w-[80%]  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-2xl mt-10 place-content-center items-center ">
           <div className="sm:flex-1 bg-gradient-to-r from-blue-500 to-indigo-500 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-2xl p-4 sm:p-10 relative overflow-hidden z-100 my-auto">
             <h1 className="text-white text-lg sm:text-xl md:text-2xl font-semibold">
               Get in touch with us today!
@@ -32,7 +32,7 @@ export function Contact() {
                 Follow Us on LinkedIn <ArrowUpRight className="inline-block h-5"/>
               </Link>
             </div>{" "}
-            <div className="sm:py-10">
+            <div className="sm:py-16">
             <Image
               src={gavel}
               alt="gavel-image"
@@ -41,7 +41,7 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="sm:flex-2 p-4 sm:p-10">
+          <div className="sm:flex-1 p-4 sm:p-10">
             <ContactForm />
           </div>
         </div>

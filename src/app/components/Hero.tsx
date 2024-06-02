@@ -47,33 +47,33 @@ export function Hero() {
               translateY: "-5px",
               transition: { ease: "linear", duration: 0.2 },
             }}
-            className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-gradient-to-r from-indigo-600/[0.8] to-blue-600/[0.8] text-white rounded-3xl text-center mx-auto px-3 py-1 my-4 text-xs sm:text-sm md:text-xl"
+            className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-gradient-to-r from-indigo-600/[0.8] to-blue-600/[0.8] text-white rounded-3xl text-center mx-auto px-3 py-1 my-4 text-xs sm:text-sm md:text-lg"
           >
             Compliance law firm based in New Delhi, India{" "}
             <MapPin size={16} className="inline-block -ml-0 mb-1" />
           </motion.h3>
 
           <TextGenerateEffect words={words} />
-          <p className="text-neutral-900 max-w-xl mx-auto text-xl sm:text-xl md:text-2xl py-4 text-center relative z-10">
+          <p className="text-neutral-900 max-w-xl mx-auto text-lg sm:text-lg md:text-xl py-4 text-center relative z-10">
             Trusted legal experts providing comprehensive solutions for your
             business.
           </p>
           <div className="flex flex-wrap sm:flex-nowrap md:flex-nowrap place-content-center gap-2 sm:gap-4">
-            <button className="text-white py-1 sm:py-2 text-xs sm:text-sm md:text-xl rounded-3xl bg-gradient-to-r from-indigo-600/[0.9] to-blue-600/[0.9] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] px-3 sm:px-5 font-light">
+            <button className="text-white py-1 sm:py-2 text-xs sm:text-sm md:text-lg rounded-3xl bg-gradient-to-r from-indigo-600/[0.9] to-blue-600/[0.9] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] px-3 sm:px-5 font-light">
               <Link href="#contact">Get in Touch Now</Link>
               <ChevronRight className="inline-block h-fit" />
             </button>
             <Link
               href="#about"
-              className="text-black py-1 sm:py-2 bg-neutral-200 outline outline-1 outline-indigo-500 text-xs sm:text-sm md:text-xl rounded-3xl px-3 sm:px-5 font-light shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+              className="text-black py-1 sm:py-2 bg-neutral-200 outline outline-1 outline-indigo-500 text-xs sm:text-sm md:text-lg rounded-3xl px-3 sm:px-5 font-light shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
             >
               Learn more <ChevronDown className="inline-block h-fit" />
             </Link>
           </div>
         </div>
 
-        <div className="grid place-content-center gap-10 mt-20 mx-auto inset-x-0 px-8 sm:px-0">
-          <h1 className="text-md sm:text-xl text-center font-medium inline-block text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-blue-800 to-pink-600 uppercase">
+        <div className="grid place-content-center gap-10 mt-16 mx-auto inset-x-0 px-8 sm:px-0">
+          <h1 className="text-md sm:text-xl text-center font-medium inline-block text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 via-blue-800 to-pink-600 capitalize">
             Powering founders And companies all across the world
           </h1>
           <div className="flex flex-wrap sm:flex-nowrap gap-4 sm:gap-10 place-content-center items-center">

@@ -7,7 +7,7 @@ import { Testimonials } from "@/app/components/Testimonials";
 
 export default function Home() {
   return (
-    <main className="snap-y !snap-mandatory h-screen overflow-y-scroll scroll-smooth">
+    <main className="md:snap-y md:!snap-mandatory h-screen overflow-y-scroll scroll-smooth">
       <NavbarDemo/>
       <Hero />
       <About/>

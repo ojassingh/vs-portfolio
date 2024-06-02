@@ -78,32 +78,32 @@ export function Services() {
   return (
     <div
       id="services"
-      className="snap-start h-screen w-full rounded-md bg-[#f8f9fa] grid place-content-center"
+      className="snap-start min-h-screen rounded-md bg-[#f8f9fa] grid place-content-center"
       ref={ref2}
-      style={{
-        transform: isInView2 ? "none" : "translateX(+400px)",
+      
+    >
+      <section className="w-full px-4 py-10 md:py-20 px md:px-32" style={{
+        transform: isInView2 ? "none" : "translateY(+200px)",
         opacity: isInView2 ? 1 : 0,
         transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-      }}
-    >
-      <section className="w-full py-20 px-32">
-        <div className="flex items-center justify-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
-          <div className="space-y-4 w-[40%]">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#353b48] tracking-wide">
+      }}>
+        <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-12">
+          <div className="space-y-4 md:w-[40%] px-4">
+            <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl text-[#353b48] tracking-wide">
               <span className={merriweather.className}>Our Legal Services</span>
             </h2>
-            <p className="text-gray-500 text-xl">
+            <p className="text-gray-500 text-lg sm:text-xl">
               Our team of experienced attorneys provides a wide range of legal
               services to meet your needs. Please reach out to us if you have
               any other needs.
             </p>
-            <Link href="#contact">
-              <button className="bg-gradient-to-r from-blue-700 via-indigo-500 to-pink-400 py-2 px-4 text-white rounded-3xl my-5">
+            <Link href="#contact" className="mx-auto">
+              <button className="bg-gradient-to-r text-white from-indigo-600/[0.9] to-blue-600/[0.9] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] px-4 py-2 rounded-3xl my-5">
                 Get in touch <ChevronRight className="inline-block h-fit" />
               </button>
             </Link>
           </div>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 w-[60%]">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:w-[60%]">
             {services.map((service, index) => (
               <div
                 key={index}

@@ -3,25 +3,26 @@ import { merriweather } from "./ui/fonts";
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export function Testimonials() {
   return (
     <div
       id="testimonials"
-      className="snap-start rounded-md bg-[#f8f9fa]  py-20"
+      className="snap-start rounded-md bg-[#f8f9fa]  py-10 sm:py-20 "
     >
-      <div className="text-center">
-        <h1 className="text-2xl font-medium mb-10">
+      <div className="text-center md:mt-10">
+        {/* <h1 className="text-2xl font-medium mb-10">
           <span className="bg-clip-text text-transparent bg-gradient-to-b to-indigo-600 from-blue-600">
             WHAT DO THEY SAY?
           </span>
-        </h1>
-        <h1 className="text-5xl font-semibold text-neutral-700">
+        </h1> */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-neutral-700 px-4 sm:px-0">
           <span className={merriweather.className}>
             Our Clients&apos; Kind Words
           </span>
         </h1>
-        <p className="py-6 mt-4 text-xl text-neutral-500">
+        <p className="py-6 mt-4 text-lg sm:text-lg md:text-xl text-neutral-500 px-4 sm:px-0">
           Hear from the people we&apos;ve helped with our services.
         </p>
       </div>
@@ -31,6 +32,11 @@ export function Testimonials() {
           direction="right"
           speed="slow"
         /> */}
+        {/* <InfiniteMovingCards
+          items={testimonials}
+          direction="left"
+          speed="slow"
+        /> */}
         <div className="flex flex-wrap gap-4 place-content-center mx-auto p-2 list-none">
           {testimonials.map((item, idx) => (
             <motion.li
@@ -38,7 +44,7 @@ export function Testimonials() {
                 scale: 1.01,
                 transition: { ease: "linear", duration: 0.1 },
               }}
-              className="bg-gradient-to-r from-blue-500 to-indigo-500 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] w-[350px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 md:w-[450px]"
+              className="bg-gradient-to-r from-blue-500 to-indigo-500 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] w-[325px] sm:w-[350px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 md:w-[450px]"
               key={item.name}
             >
               <blockquote>
@@ -48,10 +54,10 @@ export function Testimonials() {
                 ></div>
                 <div className="relative z-20 flex flex-row items-center">
                   <span className="flex flex-col gap-1">
-                    <span className=" text-lg leading-[1.6] text-white font-bold">
+                    <span className="text-md sm:text-lg leading-[1.6] text-white font-bold">
                       {item.name}
                     </span>
-                    <span className=" text-md leading-[1.6] text-white font-semibold">
+                    <span className="text-sm sm:text-base leading-[1.6] text-white font-semibold">
                       {item.role} @{" "}
                       {item.src ? (
                         <a target="_blank" href={item.src}>
@@ -66,9 +72,11 @@ export function Testimonials() {
                     </span>
                   </span>
                 </div>
-                <span className=" relative z-20 text-md leading-[1.6] text-white font-normal">
+                <p className="text-sm sm:text-base">
+                <span className=" relative z-20 leading-[1.6] text-white font-normal">
                   &quot;{item.quote}&quot;
                 </span>
+                </p>
               </blockquote>
             </motion.li>
           ))}

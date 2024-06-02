@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/app/lib/utils";
+import { cn } from "@/app/utils/cn";
 import React, { useEffect, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 

@@ -22,7 +22,6 @@ import itochu from "../../../public/images/itochu.png";
 import censhare from "../../../public/images/censhare.png";
 import egelhof from "../../../public/images/egelhof.png";
 import cpr from "../../../public/images/CPR.png";
-import WordRotate from "./ui/word-rotate";
 
 export function Hero() {
   return (

@@ -10,7 +10,7 @@ import {
   Phone,
   SearchSlash,
 } from "lucide-react";
-import logo from "../../../public/images/4.png";
+import logo from "../../../public/images/anilla.png";
 import Image from "next/image";
 import { DropdownMenuDemo } from "./ui/Dropdown";
 
@@ -50,9 +50,9 @@ export function NavbarDemo() {
 
   return (
     <div className="z-[1000] bg-[#f8f9fa] top-0 flex place-content-between items-center px-4 sm:px-12 md:px-20 py-2 mx-auto inset-x-0 sm:sticky">
-      <div className="text-xl text-black font-medium">
+      <div className="text-xl text-black font-medium z-[2000] ">
         <Link href="/#home">
-          <Image src={logo} alt="logo" className="w-12" />
+          <Image src={logo} alt="logo" className="w-[300px]" />
         </Link>
       </div>
       <div className="hidden sm:hidden md:inline-block">
@@ -78,7 +78,7 @@ export function NavbarDemo() {
           ))}
         </div>
       </div>
-      <div className="inline-block sm:inline-block md:hidden z-[1000]">
+      <div className="md:hidden z-[1000] w-full">
         <DropdownMenuDemo />
       </div>
     </div>

@@ -15,18 +15,22 @@ export function About() {
     {
       title: "Multinational Companies",
       stat: "200",
+      type: "number"
     },
     {
       title: "Years of Experience",
       stat: "20",
+      type: "number"
     },
     {
-      title: "Capital Handled",
-      stat: "50+",
+      title: "Compliance Success",
+      stat: "99",
+      type: "percent"
     },
     {
       title: "Client Retention",
-      stat: "90",
+      stat: "95",
+      type: "percent"
     },
   ];
 
@@ -98,7 +102,7 @@ export function About() {
                 >
                   {isInView && (
                     <p className="text-2xl lg:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-800 to-blue-600 inline-block">
-                      <CountUp end={parseInt(stat.stat)} />+
+                      <CountUp end={parseInt(stat.stat)} />{stat.type == "percent" ? "%" : ""}+
                     </p>
                   )}
                   <h2 className="text-md lg:text-lg text-black">

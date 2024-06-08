@@ -22,6 +22,8 @@ import itochu from "../../../public/images/itochu.png";
 import censhare from "../../../public/images/censhare.png";
 import egelhof from "../../../public/images/egelhof.png";
 import cpr from "../../../public/images/CPR.png";
+import act from '../../../public/images/act.png'
+import design from '../../../public/images/design.png'
 
 export function Hero() {
   return (
@@ -30,7 +32,7 @@ export function Hero() {
       className="!snap-start snap-y min-h-screen w-full rounded-md bg-[#f8f9fa] grid place-content-center relative"
     >
       <WavyBackground blur={60}>
-        <div className="w-full mx-auto z-[100]">
+        {/* <div className="w-full mx-auto z-[100] hidden sm:inline-block">
           <Image
             src={icsi}
             alt="icsi logo"
@@ -40,17 +42,17 @@ export function Hero() {
           <p className="text-center text-neutral-500 text-xs sm:text-sm 2xl:text-lg">
             Trusted by Institute of Company Secretaries of India
           </p>
-        </div>
+        </div> */}
         <div className=" mx-auto px-4 grid place-content-center gap-4">
           <motion.h3
             whileHover={{
               translateY: "-5px",
               transition: { ease: "linear", duration: 0.2 },
             }}
-            className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-gradient-to-r from-indigo-600/[0.8] to-blue-600/[0.8] text-white rounded-3xl text-center mx-auto px-3 py-1 my-4 text-xs sm:text-sm md:text-lg"
+            className="flex gap-2 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-gradient-to-r from-indigo-600/[0.8] to-blue-600/[0.8] text-white rounded-3xl text-center mx-auto px-3 py-1 my-4 text-xs sm:text-sm md:text-lg"
           >
-            Compliance law firm based in New Delhi, India{" "}
-            <MapPin size={16} className="inline-block -ml-0 mb-1" />
+            Compliance law firm based in NCR, India
+            <MapPin size={20} className="mt-1"/>
           </motion.h3>
 
           <TextGenerateEffect words={words} />
@@ -131,6 +133,16 @@ const companies = [
     name: "Institute for Policy Research",
     src: cpr,
     link: "https://www.cprindia.org/",
+  },
+  {
+    name: "Design Cafe",
+    src: design,
+    link: "https://www.designcafe.com/",
+  },
+  {
+    name: "ACT Fibernet",
+    src: act,
+    link: "https://www.actcorp.in/",
   },
 ];
 const words = "Compliance Expertise that You Can Trust";
